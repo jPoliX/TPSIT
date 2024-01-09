@@ -28,7 +28,7 @@ int main()
 		mediaPositivi=sommaPositivi/conteggioPositivi;
 		printf("somma dei numeri positivi: %d\n", sommaPositivi);
 		printf("Numeri positivi inseriti: %d\n", conteggioPositivi);
-		printf("La media è: %.2f\n", mediaPositivi);
+		printf("La media è: %f\n", mediaPositivi);
 	}
 	else
 	{
@@ -39,7 +39,7 @@ int main()
 		mediaNegativi=sommaNegativi/conteggioNegativi;
 		printf("somma dei numeri negativi: %d\n", sommaNegativi);
 		printf("Numeri negativi: %d\n", conteggioNegativi);
-		printf("La media è: %.2f\n", mediaNegativi);
+		printf("La media è: %f\n", mediaNegativi);
 	}
 	else
 	{
