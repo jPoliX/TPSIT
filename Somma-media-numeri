@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+	int n,num,sommaPositivi=0,sommaNegativi=0,conteggioNegativi=0,conteggioPositivi=0;
+	float mediaPositivi,mediaNegativi;
+	printf("inserisci quanti numeri vuoi leggere ");
+	scanf("%d", &n);
+	
+	for(int i=0; i<n; i++)
+	{
+		printf("Inserisci il numero: %d ");
+		scanf("%d", &num);
+		
+		if(num>0)
+		{
+			sommaPositivi+=num;
+			conteggioPositivi++;
+		}
+		else
+		{
+			sommaNegativi+=num;
+			conteggioNegativi++;
+		}
+	}
+	if(conteggioPositivi>0)
+	{
+		mediaPositivi=(float)sommaPositivi/conteggioPositivi;
+		printf("somma dei numeri positivi: %d\n", sommaPositivi);
+		printf("Numeri positivi inseriti: %d\n", conteggioPositivi);
+		printf("La media è: %.2f\n", mediaPositivi);
+	}
+	else
+	{
+		printf("Non sno stati inseriti numeri positivi");
+	}
+	if(conteggioNegativi>0)
+	{
+		mediaNegativi=(float)sommaNegativi/conteggioNegativi;
+		printf("somma dei numeri negativi: %d\n", sommaNegativi);
+		printf("Numeri negativi inseriti: %d\n", conteggioNegativi);
+		printf("La media è: %.2f\n", mediaNegativi);
+	}
+	else
+	{
+		printf("Non sono stati Inseriti numeri negativi");
+	}
+return 0;
+}
