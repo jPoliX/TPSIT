@@ -14,12 +14,12 @@ int main()
 		
 		if(num>0)
 		{
-			sommaPositivi+=num;
+			sommaPositivi=num;
 			conteggioPositivi++;
 		}
 		else
 		{
-			sommaNegativi+=num;
+			sommaNegativi=num;
 			conteggioNegativi++;
 		}
 	}
@@ -32,18 +32,18 @@ int main()
 	}
 	else
 	{
-		printf("Non sno stati inseriti numeri positivi");
+		printf("non ci sono numeri positivi");
 	}
 	if(conteggioNegativi>0)
 	{
 		mediaNegativi=(float)sommaNegativi/conteggioNegativi;
 		printf("somma dei numeri negativi: %d\n", sommaNegativi);
-		printf("Numeri negativi inseriti: %d\n", conteggioNegativi);
+		printf("Numeri negativi: %d\n", conteggioNegativi);
 		printf("La media è: %.2f\n", mediaNegativi);
 	}
 	else
 	{
-		printf("Non sono stati Inseriti numeri negativi");
+		printf("non ci sono numeri negativi");
 	}
 return 0;
 }
