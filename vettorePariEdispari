@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Inserisci la dimensione del vettore: ");
+    scanf("%d", &n);
+
+    int vettore[n], vetPari[n], vetDispari[n];
+    int contatorePari = 0, contatoreDispari = 0;
+
+
+    printf("Inserisci numeri:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &vettore[i]);
+        
+        if (vettore[i] % 2 == 0)
+            vetPari[contatorePari++] = vettore[i];
+        else
+            vetDispari[contatoreDispari++] = vettore[i];
+    }
+
+    
+    printf("i numeri pari del vettore sono: ");
+    for (int i = 0; i < contatorePari; i++) {
+        printf("%d ", vetPari[i]);
+    }
+
+    
+    printf("\nI numeri dispari del vettore sono: ");
+    for (int i = 0; i < contatoreDispari; i++) {
+        printf("%d ", vetDispari[i]);
+    }
+    return 0;
+}
