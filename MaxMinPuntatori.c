@@ -25,11 +25,13 @@ for(int i=0;i<quantiNumeri;i++){
             max = *(puntatore + i);
   }
 }
-    media=somma/quantiNumeri;
+    media=(float)somma/quantiNumeri;
     
 printf("la media è: %f\n",media);
 printf("il minimo è: %d\n",min);
 printf("il massimo è: %d\n",max);
 
     return 0;
+    //for(int *puntatore=vettore;puntatore<vettore+quantiNumeri;puntatore++);
+    //somma+=*puntatore;
 }
