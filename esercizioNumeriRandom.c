@@ -15,7 +15,7 @@ int main() {
     for (int i = 0; i < dimensione; i++) {
         arr[i] = rand() % 10; //genera numeri random da 1 a 10
     }
-      for(int i=0;i<dimensione;i++){
+      for(int i=0;i<dimensione;i++){ // calcolo somma array con duplicati
         somma+=arr[i];
     }
     
@@ -39,8 +39,8 @@ int main() {
         }
     }
     
-      for(int i=0;i<indice;i++){
-        somma2+=arr2[i];
+      for(int i=0;i<indice;i++){ // calcolo somma array senza duplicati
+        somma2+=arr2[i]; 
     }
    
     media=(float)somma/dimensione; //trovo le medie dei 2 array
