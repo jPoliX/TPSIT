@@ -10,7 +10,7 @@ int main() {
     scanf("%d",&dimensione);
     int arr[dimensione]; 
     
-    srand(time(NULL)); //variabile per generare numeri diversi ogni esecuzione
+    srand(time(NULL)); // genera numeri diversi ogni esecuzione in base all'orario
   
     for (int i = 0; i < dimensione; i++) {
         arr[i] = rand() % 10; //genera numeri random da 1 a 10
