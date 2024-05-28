@@ -62,7 +62,7 @@ int main() {
     } else if(media==media2){
         printf("La due medie hanno lo stesso valore\n");
     }else 
-    printf("La media senza duplicati è maggiore")
+    printf("La media senza duplicati è maggiore");
  
     return 0;
 }
