@@ -21,10 +21,8 @@ int main()
             {
                 risultato = (float)n1 / n2;
             }
-            else if (n2 < n1)
-            {
+            else
                 risultato = (float)n2 / n1;
-            }
 
             printf("Il rapporto tra i due numeri è: %.2f\n", risultato);
         }
