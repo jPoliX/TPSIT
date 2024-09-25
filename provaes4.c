@@ -11,26 +11,30 @@ ragione per cui non è stato possibile svolgere il calcolo.*/
 #include <math.h>
 int main()
 {
-  int n1,n2;
-  float risultato=0, radice=0;
-  do{
-      printf("Inserisci il primo numero reale: ");
-      scanf("%d", &n1);
-      printf("Inserisci il secondo numero reale: ");
-      scanf("%d", &n2);
-      
-      if(n1>n2){
-          risultato=n1/n2;
-          radice=sqrt(risultato);
-          printf("La radice del rapporto è: %.2f\n", radice);
-      }else 
-      risultato=n2/n1;
-          radice=sqrt(risultato);
-          printf("La radice del rapporto è: %.2f\n", radice);
-          
-  }while(risultato>0);
-  
-  printf("Calcolo non possibile");
-  
+    int n1, n2;
+    float risultato = 0;
+    do
+    {
+        printf("Inserisci il primo numero reale: \n");
+        scanf("%d", &n1);
+        printf("Inserisci il secondo numero reale: \n");
+        scanf("%d", &n2);
+
+        if (n1 > n2)
+        {
+            risultato = n1 / n2;
+        }
+        else
+            risultato = n2 / n1;
+
+        if (risultato > 0)
+        {
+            risultato = sqrt(risultato);
+            printf("La radice è: %.2f\n", risultato);
+        }
+    } while (risultato > 0);
+
+    printf("radice impossibile");
+
     return 0;
 }
