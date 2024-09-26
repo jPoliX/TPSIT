@@ -10,17 +10,18 @@ permette di effettuare il calcolo (nel dominio dei numeri reali).*/
 
 int main()
 {
-    int N, somma=0, numero, radice=0;
-    printf("Inserisci quanti numeri deve calcolare: %d",N);
+    int N, numero, radice=0;
+    float somma=0;
+    printf("Inserisci quanti numeri deve calcolare: ");
     scanf("%d", &N);
-    /*while(N>0){
-        printf("Inserisci un numero: %d", numero);
+    while(N>0){
+        printf("Inserisci un numero: ");
         scanf("%d", &numero);
         radice=sqrt(numero);
         somma+=radice;
         N--;
-    }*/
-    printf("somma radici quadrate: %d", somma);
+    }
+    printf("somma radici quadrate: %.2f", somma);
     
     return 0;
 }
